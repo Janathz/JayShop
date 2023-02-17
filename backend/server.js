@@ -4,7 +4,7 @@ import express from 'express';
 import { errorHandler, notFound } from './middleware/errorMiddleware.js';
 import connectDB from './config/db.js';
 import colors from 'colors';
-import productRoutes from './routes/productsRouter.js';
+import productRoutes from './routes/productRoutes.js';
 
 // const dotenv = require('dotenv');
 // const express = require('express');
