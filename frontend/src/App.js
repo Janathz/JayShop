@@ -5,6 +5,7 @@ import Header from './components/Header';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LoginScreen';
+import OrderScreen from './screens/orderScreen';
 import PaymentScreen from './screens/PaymentScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import ProductScreen from './screens/ProductScreen';
@@ -18,6 +19,7 @@ const App = () => {
       <Header />
       <main className='py-3'>
         <Container>
+          <Route path='/order/:id' component={OrderScreen} />
           <Route path='/payment' component={PaymentScreen} />
           <Route path='/placeorder' component={PlaceOrderScreen} />
           <Route path='/shipping' component={ShippingScreen} />
